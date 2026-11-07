@@ -377,6 +377,42 @@ img{-webkit-user-drag:none}
 #upd .ui{width:40px;height:40px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(180deg,#f6dc8a,#c99a3e);color:#2a2108;flex:none;animation:sunr 3s ease-in-out infinite}#upd .ui svg{width:24px;height:24px}
 #upd span{flex:1;min-width:0}#upd b{display:block;color:var(--hi)}#upd small{display:block;color:var(--muted);font-size:.76rem;line-height:1.4}
 #upd button{padding:8px 14px;border-radius:99px;font-weight:800;border:1.5px solid var(--gold);color:var(--gold)}#upd button.go{background:linear-gradient(180deg,#f6dc8a,#c99a3e);color:#2a2108}
+
+/* v10 */
+.ay.on{background:none!important;box-shadow:none!important}
+.text{line-height:2.6}
+#aaBtn{font-size:0;width:46px;height:46px;position:relative}
+#aaBtn svg{width:25px;height:25px;transition:transform .5s var(--ez)}#aaBtn:active svg,#aaBtn.o svg{transform:rotate(90deg) scale(1.1)}
+#aaBtn::after{content:"";position:absolute;top:7px;right:7px;width:9px;height:9px;border-radius:50%;background:var(--hi);box-shadow:0 0 0 2px #06231f,0 0 8px var(--gold)}
+#rdSheet{max-height:82dvh;overflow:auto}
+#rdSheet h3{margin-bottom:8px}
+.tabs3{position:relative;display:grid;grid-template-columns:repeat(3,1fr);padding:3px;border-radius:99px;background:rgba(3,28,24,.65);border:1.5px solid rgba(226,187,102,.55);margin-bottom:12px;--i:0}
+.tabs3 button{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:8px 2px;font-weight:800;font-size:.86rem;color:var(--gold);transition:color .3s}.tabs3 button svg{width:18px;height:18px}.tabs3 button[aria-pressed=true]{color:#2a2108}
+.tabs3 u{position:absolute;top:3px;bottom:3px;right:3px;width:calc(33.333% - 2px);border-radius:99px;background:linear-gradient(180deg,#f6dc8a,#c99a3e);box-shadow:0 3px 10px rgba(0,0,0,.35);transform:translateX(calc(var(--i)*-100%));transition:transform .4s var(--ez)}
+.rdp{display:none}.rdp.on{display:block;animation:rpi .4s var(--ez)}@keyframes rpi{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.rdr{display:grid;gap:8px}
+.rdr button{display:flex;align-items:center;gap:12px;padding:9px 12px;border-radius:20px;text-align:right;font-weight:700;color:var(--ink);background:rgba(255,255,255,.06);border:1.5px solid rgba(226,187,102,.25);animation:rpi .45s var(--ez) backwards;animation-delay:calc(var(--k)*45ms);transition:background .25s,border-color .25s,transform .2s}
+.rdr button .av{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font:400 1.15rem 'Aref Ruqaa',serif;color:var(--hi);background:radial-gradient(circle at 35% 30%,#17806a,#08342b 75%);box-shadow:0 0 0 2px #0a3d34,0 0 0 3.5px var(--gold2);flex:none}
+.rdr button .nm{flex:1}.rdr button .eq{display:none;gap:2px;align-items:flex-end;height:18px}.rdr button .eq i{width:3px;background:var(--hi);border-radius:2px;animation:w .6s ease-in-out infinite alternate;height:100%}.rdr button .eq i:nth-child(2){animation-delay:.2s}.rdr button .eq i:nth-child(3){animation-delay:.4s}
+.rdr button[aria-pressed=true]{background:linear-gradient(135deg,rgba(15,102,82,.9),rgba(8,52,43,.95));border-color:var(--hi);transform:scale(1.015)}.rdr button[aria-pressed=true] .eq{display:flex}
+.fz{display:flex;align-items:center;gap:10px;margin:6px 0}.fz button{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--gold);color:var(--gold);font:800 1.1rem 'Cairo',sans-serif;flex:none}.fz input{flex:1}
+.pgc{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:6px 0 12px}
+.pgc button{display:grid;justify-items:center;gap:6px;padding:12px 4px 8px;border-radius:20px;border:1.5px solid rgba(226,187,102,.35);font-weight:700;font-size:.82rem;color:var(--ink);transition:transform .25s var(--ez),border-color .25s}
+.pgc button i{width:100%;height:50px;border-radius:12px;display:grid;place-items:center;font:400 1.4rem 'Amiri Quran',serif;font-style:normal;box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}
+.pgc button[aria-pressed=true]{border-color:var(--hi);background:rgba(226,187,102,.16);transform:translateY(-3px)}
+.tg{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 2px;border-top:1px solid rgba(217,178,95,.2)}.tg small{display:block;color:var(--muted);font-size:.78rem}
+/* settings v10 */
+#set .hrs{position:relative;overflow:hidden;border-radius:28px;padding:16px;margin:0 0 14px;color:var(--ink);background:radial-gradient(circle at 15% 0,rgba(246,220,138,.28),transparent 55%),linear-gradient(145deg,#0f6652,#06231f);border:2px solid var(--gold2);box-shadow:0 12px 28px rgba(0,0,0,.4)}
+#set .hrs b{display:block;font:400 1.6rem 'Aref Ruqaa',serif;color:var(--gold)}#set .hrs small{color:var(--muted)}
+#set .hrs .qs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+#set .hrs .qs button{display:grid;justify-items:center;gap:4px;padding:10px 2px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(226,187,102,.4);font-weight:700;font-size:.76rem;color:var(--ink)}
+#set .hrs .qs svg{width:24px;height:24px;color:var(--hi)}#set .hrs .qs button small{color:var(--hi);font-weight:800;font-size:.72rem}
+#set .sg{--ac:#2fae8a;position:relative;padding:4px 14px 6px;border-radius:26px;border:1.5px solid rgba(226,187,102,.35);border-inline-start:4px solid var(--ac);background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(3,26,22,.8));animation:rpi .5s var(--ez) backwards}
+#set .sg:nth-of-type(2){--ac:#e8b84b;animation-delay:.06s}#set .sg:nth-of-type(3){--ac:#5b9bf0;animation-delay:.12s}#set .sg:nth-of-type(4){--ac:#9a7bf0;animation-delay:.18s}#set .sg:nth-of-type(5){--ac:#38c4c9;animation-delay:.24s}#set .sg:nth-of-type(6){--ac:#e86f5b;animation-delay:.3s}#set .sg:nth-of-type(7){--ac:#6fcf6f}
+#set .sg h4 .hi{background:linear-gradient(145deg,var(--ac),#06231f);border:0;color:#fff;box-shadow:0 4px 10px rgba(0,0,0,.35)}
+#set .sr{padding:11px 0}
+#set .sw{width:50px;height:28px}#set .sw::after{width:22px;height:22px}#set .sw[aria-checked=false]::after{transform:translateX(-22px)}
+#set select{max-width:58%;background:rgba(3,28,24,.8)}
 </style>
 </head>
 <body>
@@ -391,6 +427,7 @@ img{-webkit-user-drag:none}
 <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><path d="M12 2.5v2.3M12 19.2v2.3M2.5 12h2.3M19.2 12h2.3M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></g></symbol>
 <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 3l-7 8h4v4h6v-4h4zM5 19h14v2H5z" fill="currentColor"/></symbol>
 <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 2l2.2 6.3L21 10l-6.8 1.7L12 18l-2.2-6.3L3 10l6.8-1.7zM19 15l.9 2.1 2.1.9-2.1.9L19 21l-.9-2.1-2.1-.9 2.1-.9z" fill="currentColor"/></symbol>
+<symbol id="i-tune" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h9M17 7h3M4 12h3M11 12h9M4 17h11M19 17h1"/><circle cx="15" cy="7" r="2" fill="currentColor"/><circle cx="9" cy="12" r="2" fill="currentColor"/><circle cx="17" cy="17" r="2" fill="currentColor"/></g></symbol>
 <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 5.6c3.3-1.3 6.6-1 10 1.1v13.2c-3.4-2-6.7-2.3-10-1z" fill="url(#gE)" stroke="url(#gG)" stroke-width="1.1" stroke-linejoin="round"/><path d="M22 5.6c-3.3-1.3-6.6-1-10 1.1v13.2c3.4-2 6.7-2.3 10-1z" fill="url(#gE)" stroke="url(#gG)" stroke-width="1.1" stroke-linejoin="round"/><path d="M4.4 9.2c1.9-.5 3.7-.3 5.4.5M4.4 12.2c1.9-.5 3.7-.3 5.4.5M19.6 9.2c-1.9-.5-3.7-.3-5.4.5M19.6 12.2c-1.9-.5-3.7-.3-5.4.5" stroke="url(#gG)" stroke-width=".9" stroke-linecap="round" fill="none"/></symbol>
 <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6.5 2.8h11a1.2 1.2 0 0 1 1.2 1.2v17.2l-6.7-4.7-6.7 4.7V4a1.2 1.2 0 0 1 1.2-1.2z" fill="url(#gE)" stroke="url(#gG)" stroke-width="1"/><path d="M9 6.5h6" stroke="#f0cf80" stroke-width="1.2" stroke-linecap="round" opacity=".7"/></symbol>
 <symbol id="i-history" viewBox="0 0 24 24"><g fill="none" stroke="url(#gE)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 12A8.4 8.4 0 1 0 6 6"/><path d="M2.8 3.8v4.6h4.6"/><path d="M12 7.6V12l3 2"/></g></symbol>
@@ -439,7 +476,7 @@ img{-webkit-user-drag:none}
 <header id="top" hidden>
   <button class="ib tap bk" id="back" aria-label="رجوع"><svg><use href="#i-chev"/></svg></button>
   <h1 id="title"></h1>
-  <button class="ib tap aa" id="aaBtn" aria-label="خيارات القراءة" hidden>Aa</button>
+  <button class="ib tap aa" id="aaBtn" aria-label="القارئ والعرض" hidden><svg><use href="#i-tune"/></svg>Aa</button>
   <button class="ib tap" id="gearBtn" data-set aria-label="الإعدادات"><svg><use href="#i-gear"/></svg></button>
   <div id="bar" hidden><i></i></div>
 </header>
@@ -568,19 +605,23 @@ img{-webkit-user-drag:none}
   <button class="act tap" id="aCopy"><svg><use href="#i-copy"/></svg>نسخ الآية</button>
 </div>
 <div class="sheet" id="rdSheet" hidden>
-  <h3>خيارات القراءة</h3>
-  <div class="fsr"><label for="fsr">حجم الخط</label><span class="fsv"></span><button class="fsb tap" id="fsReset" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1"/><path d="M3.5 4v4.5H8"/></svg>الحجم الافتراضي</button></div>
-  <input type="range" id="fsr" min="1.4" max="3.6" step="0.1">
-  <div class="pv">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
-  <label>لون الصفحة</label>
-  <div class="sw3" id="pgs">
-    <button class="tap" data-pg="paper" aria-pressed="false"><i style="background:#f8efdb"></i>ورقي</button>
-    <button class="tap" data-pg="sepia" aria-pressed="false"><i style="background:#eedcb4"></i>كهرماني</button>
-    <button class="tap" data-pg="night" aria-pressed="false"><i style="background:#0d2b25"></i>ليلي</button>
+  <h3>تخصيص القراءة</h3>
+  <div class="tabs3" id="rdT"><u></u><button class="tap" data-t="0" aria-pressed="true"><svg><use href="#i-mic"/></svg>القارئ</button><button class="tap" data-t="1" aria-pressed="false"><svg><use href="#i-book"/></svg>الخط</button><button class="tap" data-t="2" aria-pressed="false"><svg><use href="#i-sun"/></svg>الصفحة</button></div>
+  <div class="rdp on" id="rdp0"><div class="rdr" id="rdRecs"></div></div>
+  <div class="rdp" id="rdp1">
+    <div class="pv">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+    <div class="fsr"><b>حجم الخط</b><span class="fsv"></span><button class="fsb tap" id="fsReset" type="button">الحجم الافتراضي</button></div>
+    <div class="fz"><button class="tap" id="fsM" aria-label="تصغير">أ-</button><input type="range" id="fsr" min="1.4" max="3.6" step="0.1"><button class="tap" id="fsP" aria-label="تكبير">أ+</button></div>
   </div>
-  <button class="act tap" id="dlCur" style="margin-top:14px"><svg><use href="#i-download"/></svg>تحميل تلاوة هذا الجزء للاستماع بلا إنترنت</button>
+  <div class="rdp" id="rdp2">
+    <div class="pgc" id="pgs"><button class="tap" data-pg="paper" aria-pressed="false"><i style="background:#f8efdb;color:#12362c">بسم</i>ورقي</button><button class="tap" data-pg="sepia" aria-pressed="false"><i style="background:#eedcb4;color:#3a2a10">بسم</i>كهرماني</button><button class="tap" data-pg="night" aria-pressed="false"><i style="background:#0d2b25;color:#f3ead0">بسم</i>ليلي</button></div>
+    <div class="tg"><span><b>تتبّع الآية الجارية</b><small>تمرير تلقائي مع التلاوة</small></span><button class="sw" role="switch" id="rdScr" aria-label="تتبّع الآية"></button></div>
+    <button class="act tap" id="dlCur" style="margin-top:12px"><svg><use href="#i-download"/></svg>تحميل تلاوة هذا الجزء للاستماع بلا إنترنت</button>
+  </div>
 </div>
 
+
+<script src="quran-text.js"></script>
 <script>
 const API='https://api.alquran.cloud/v1',$=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const ar=n=>String(n).replace(/\d/g,d=>'٠١٢٣٤٥٦٧٨٩'[d]);
@@ -612,7 +653,6 @@ let tt;function toast(t){$('.toast')?.remove();const d=document.createElement('d
 function sheet(id){$('#bd').hidden=false;$(id).hidden=false}
 function closeS(){$$('.sheet').forEach(s=>s.hidden=true);$('#bd').hidden=true;clearSel()}
 $('#bd').onclick=closeS;addEventListener('keydown',e=>e.key==='Escape'&&closeS());
-$('#aaBtn').onclick=()=>sheet('#rdSheet');
 let dip;addEventListener('beforeinstallprompt',e=>{e.preventDefault();dip=e;if(page==='set')renderSet()});
 /* ripple */
 document.addEventListener('pointerdown',e=>{const b=e.target.closest('.tap:not(.nr)');if(!b||cfg.calm)return;const r=b.getBoundingClientRect(),z=Math.max(r.width,r.height)*1.7,i=document.createElement('i');
@@ -718,8 +758,24 @@ function closeAdh(fromPop){const A=$('#adh');A.classList.remove('open');setTimeo
 $('#adhCard').onclick=openAdh;$('#adhX').onclick=()=>closeAdh();
 $('#sgT').onclick=e=>{const b=e.target.closest('button');if(b&&b.dataset.v!==aT){aT=b.dataset.v;aI=0;aRender()}};
 $('#sgM').onclick=e=>{const b=e.target.closest('button');if(b&&b.dataset.v!==aM){aM=b.dataset.v;st.s('adM',aM);aI=0;aRender()}};
+
+/* ---------- v10: لوحة القارئ والعرض ---------- */
+function rdRecs(){const r=$('#rdRecs');r.innerHTML='';RECS.forEach(([id,n],k)=>{const b=document.createElement('button');b.className='tap';b.style.setProperty('--k',k);b.setAttribute('aria-pressed',id===rc);
+  b.innerHTML=`<span class="av">${n.replace(/^(الشيخ |أبو |عبد |محمد |محمود |علي |أحمد |مصطفى |مشاري )/,'$1').charAt(0)}</span><span class="nm">${n}</span><span class="eq"><i></i><i></i><i></i></span>`;
+  b.onclick=()=>{rc=id;st.s('rc',rc);navigator.vibrate&&navigator.vibrate(10);toast('القارئ: '+n);rdRecs();if(cur&&idx>=0){const w=!au.paused;openUnit(cur.k,cur.n,Math.max(idx,0),w)}};r.append(b)})}
+function rdTab(i){const T=$('#rdT');T.style.setProperty('--i',i);$$('#rdT button').forEach(b=>b.setAttribute('aria-pressed',+b.dataset.t===i));$$('#rdSheet .rdp').forEach((p,k)=>p.classList.toggle('on',k===i));if(i===0)rdRecs()}
+$('#rdT').onclick=e=>{const b=e.target.closest('button');if(b)rdTab(+b.dataset.t)};
+$('#aaBtn').onclick=()=>{rdTab(0);$('#rdScr').setAttribute('aria-checked',cfg.scroll);sheet('#rdSheet');$('#aaBtn').classList.add('o')};
+$('#rdScr').onclick=e=>{cfg.scroll=!cfg.scroll;applyAll();e.currentTarget.setAttribute('aria-checked',cfg.scroll)};
+$('#fsM').onclick=()=>{fs=Math.max(1.4,+(fs-.1).toFixed(1));applyAll()};$('#fsP').onclick=()=>{fs=Math.min(3.6,+(fs+.1).toFixed(1));applyAll()};
+const _cs=closeS;closeS=function(){_cs();$('#aaBtn').classList.remove('o')};
+/* ---------- v10: هيرو الإعدادات ---------- */
+const _rs2=renderSet;renderSet=()=>{_rs2();const r=RECS.find(x=>x[0]===rc);const h=document.createElement('div');h.className='hrs';
+  h.innerHTML=`<b>الإعدادات</b><small>خصّص التلاوة والقراءة والتطبيق</small><div class="qs"><button class="tap" data-q="rec">${ic('mic')}القارئ<small>${r?r[1].split(' ').slice(0,2).join(' '):''}</small></button><button class="tap" data-q="pg">${ic('sun')}الصفحة<small>${{paper:'ورقي',sepia:'كهرماني',night:'ليلي'}[cfg.pg]}</small></button><button class="tap" data-q="fs">${ic('book')}الخط<small>${ar(Math.round(fs/FS0*100))}٪</small></button></div>`;
+  h.onclick=e=>{const b=e.target.closest('[data-q]');if(!b)return;if(b.dataset.q==='pg'){cfg.pg={paper:'sepia',sepia:'night',night:'paper'}[cfg.pg];applyAll();renderSet()}else{const t=$('#setBody .sg');t&&t.scrollIntoView({behavior:'smooth',block:'center'})}};
+  $('#setBody').prepend(h)};
 /* ---------- إشعار التحديث ---------- */
-const APP_VER='9',GH_REPO='';/* ضع هنا: اسم-المستخدم/اسم-المستودع ليفحص التحديثات من GitHub حتى داخل الـAPK */
+const APP_VER='10',GH_REPO='';/* ضع هنا: اسم-المستخدم/اسم-المستودع ليفحص التحديثات من GitHub حتى داخل الـAPK */
 async function chkUpd(){try{const u=GH_REPO?`https://raw.githubusercontent.com/${GH_REPO}/main/version.json?t=${Date.now()}`:`version.json?t=${Date.now()}`;
   const r=await fetch(u,{cache:'no-store'});if(!r.ok)return;const v=await r.json();if(+v.version<=+APP_VER||st.g('updSkip',0)===+v.version)return;
   $('#uT').textContent='تحديث جديد متاح • الإصدار '+ar(v.version);$('#uS').textContent=v.notes||'تحسينات وإصلاحات';$('#upd').hidden=false;
@@ -779,7 +835,7 @@ function buildQ(d){
   const sf=d.surahs;if(!sf||sf.length!==114||!d.ayahs||d.ayahs.length!==6236)throw bad('البيانات المستلمة غير مكتملة');
   const a=[],ss=[],qs=new Array(242).fill(-1),cnt=new Array(115).fill(0);
   d.ayahs.forEach((x,i)=>{const s=x.surah.number;if(!cnt[s])ss[s-1]=i;cnt[s]++;const q=x.hizbQuarter;if(qs[q]<0)qs[q]=i;
-    a.push({s,n:x.numberInSurah,t:x.text.replace(/[\u06DE\u06E9]/g,'').replace(/\s+/g,' ').trim(),j:x.juz,q,sj:!!x.sajda})});
+    a.push({s,n:x.numberInSurah,t:((window.QT&&QT[s]&&QT[s][x.numberInSurah-1])||x.text).replace(/[\u06DE\u06E9]/g,'').replace(/\s+/g,' ').trim(),j:x.juz,q,sj:!!x.sajda})});
   ss[114]=6236;qs[241]=6236;
   for(const s of sf)if(cnt[s.number]!==s.numberOfAyahs)throw bad('عدد الآيات غير مطابق');
   for(let q=1;q<=240;q++)if(qs[q]<0)throw bad('بيانات الأرباع ناقصة');
