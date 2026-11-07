@@ -1,4 +1,4 @@
-const V='quran-v10',KEEP=['quran-data','quran-audio'],SHELL=['./','index.html','manifest.webmanifest','icon-192.png','icon-512.png','icon-48.png','hero.jpg','night.jpg','taf.jpg','icon-180.png','quran-text.js'];
+const V='quran-v11',KEEP=['quran-data','quran-audio'],SHELL=['./','index.html','manifest.webmanifest','icon-192.png','icon-512.png','icon-48.png','hero.jpg','night.jpg','taf.jpg','icon-180.png','quran-text.js','adhkar.jpg'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(V).then(c=>c.addAll(SHELL)));self.skipWaiting()});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==V&&!KEEP.includes(x)).map(x=>caches.delete(x)))));self.clients.claim()});
 async function ranged(m,r){const b=await m.arrayBuffer(),h=r.headers.get('range'),T='audio/mpeg';
